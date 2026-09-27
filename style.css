@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #8b0000;
+    --text-color: #333333;
+    --background-color: #ffffff;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: Arial;
+    color: var(--text-color)
+}
+
+header{
+    height: 70px;
+    border-bottom: 1px solid #dddddd;
+}
+
+.navbar{
+    width: 1200px;
+    height: 70px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Icon{
+    width: 200px;
+}
+
+.logo{
+    color: var(--primary-color);
+    font-size: 25px;
+    transition: 0.3s;
+}
+
+.menu{
+    width: 600px;
+}
+
+ul{
+    display: flex;
+    justify-content: flex-end;
+    gap: 50px;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a{
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+ul li a:hover{
+    color: #000000;
+}
+
+.logo:hover{
+   color: #000000;
+}
+
+section{
+    min-height: 400px;
+    padding: 80px 100px;
+    text-align: center;
+}
+
+#Home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#Home h1{
+    font-size: 40px;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#Home p{
+    font-size: 18px;
+}
+
+#About h2{
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#About p{
+    max-width: 600px;
+    margin: auto;
+    line-height: 1.6;
+}
+
+#Skills h2{
+    color: var(--primary-color);
+    margin-bottom: 40px;
+}
+
+.skill-conatainer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+ 
+.Skills{
+    padding: 30px;
+    border: 1px solid var(--primary-color);
+    border-radius: 10px;
+
+    transition: 0.3s;
+}
+
+.Skills h3{
+    color: var(--primary-color);
+    margin-bottom: 15px;
+}
+
+.Skills p{
+    line-height: 1.5;
+}
+
+.Skills:hover{
+    transform: translateY(-10px);
+}
+
+#contact h2{
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+#contact p{
+    margin: 10px;
+}
+
+footer{
+    padding: 20px;
+    text-align: center;
+
+    background: var(--primary-color);
+    color: #ffffff;
+}
